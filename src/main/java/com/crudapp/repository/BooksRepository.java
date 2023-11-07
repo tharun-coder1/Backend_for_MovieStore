@@ -1,7 +1,7 @@
-package com.javatpoint.repository;
+package com.crudapp.repository;
 import org.springframework.data.repository.CrudRepository;
-//repository that extends CrudRepository
-import com.javatpoint.model.Books;
+
+import com.crudapp.model.Books;
 public interface BooksRepository extends CrudRepository<Books, Integer>
 {
 }
