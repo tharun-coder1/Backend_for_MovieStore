@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.crudapp.model.Movies;
+import com.crudapp.model.Movie;
 import com.crudapp.repository.MoviesRepository;
 //defining the business logic
 @Service
@@ -13,21 +13,21 @@ public class MoviesService
 @Autowired
 MoviesRepository MoviesRepository;
 //getting all Movies record by using the method findaAll() of CrudRepository
-public List<Movies> getAllMovies() 
+public List<Movie> getAllMovies() 
 {
-List<Movies> Movies = new ArrayList<Movies>();
+List<Movie> Movies = new ArrayList<Movie>();
 MoviesRepository.findAll().forEach(Movies1 -> Movies.add(Movies1));
 return Movies;
 }
 //getting a specific record by using the method findById() of CrudRepository
-public Movies getMoviesById(int id) 
+public Movie getMoviesById(int id) 
 {
 return MoviesRepository.findById(id).get();
 }
 //saving a specific record by using the method save() of CrudRepository
-public void saveOrUpdate(Movies Movies) 
+public void saveOrUpdate(Movie Movie) 
 {
-MoviesRepository.save(Movies);
+MoviesRepository.save(Movie);
 }
 //deleting a specific record by using the method deleteById() of CrudRepository
 public void delete(int id) 
@@ -35,7 +35,7 @@ public void delete(int id)
 MoviesRepository.deleteById(id);
 }
 //updating a record
-public void update(Movies Movies, int Movieid) 
+public void update(Movie Movies, int Movieid) 
 {
 MoviesRepository.save(Movies);
 }

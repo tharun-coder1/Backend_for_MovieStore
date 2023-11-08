@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.crudapp.model.Movies;
+import com.crudapp.model.Movie;
 import com.crudapp.service.MoviesService;
 
 
@@ -22,43 +22,43 @@ public class MoviesController
 MoviesService MoviesService;
 //creating a get mapping that retrieves all the Movies detail from the database
 
-@GetMapping("/Movie")
-private List<Movies> getAllMovies() 
+@GetMapping("/movie")
+private List<Movie> getAllMovies() 
 {
 return MoviesService.getAllMovies();
 }
 
 
 //creating a get mapping that retrieves the detail of a specific Movie
-@GetMapping("/Movie/{Movieid}")
-private Movies getMovies(@PathVariable("Movieid") int Movieid) 
+@GetMapping("/movie/{movieid}")
+private Movie getMovies(@PathVariable("movieid") int movieid) 
 {
-return MoviesService.getMoviesById(Movieid);
+return MoviesService.getMoviesById(movieid);
 }
 
 
 //creating a delete mapping that deletes a specified Movie
-@DeleteMapping("/Movie/{Movieid}")
-private void deleteMovie(@PathVariable("Movieid") int Movieid) 
+@DeleteMapping("/movie/{movieid}")
+private void deleteMovie(@PathVariable("movieid") int movieid) 
 {
-MoviesService.delete(Movieid);
+MoviesService.delete(movieid);
 }
 
 
 //creating post mapping that post the Movie detail in the database
-@PostMapping("/Movies")
-private int saveMovie(@RequestBody Movies Movies) 
+@PostMapping("/movies")
+private int saveMovie(@RequestBody Movie movie) 
 {
-MoviesService.saveOrUpdate(Movies);
-return Movies.getMovieid();
+MoviesService.saveOrUpdate(movie);
+return movie.getMovieid();
 }
 
 
 //creating put mapping that updates the Movie detail 
-@PutMapping("/Movies")
-private Movies update(@RequestBody Movies Movies) 
+@PutMapping("/movies")
+private Movie update(@RequestBody Movie movie) 
 {
-MoviesService.saveOrUpdate(Movies);
-return Movies;
+MoviesService.saveOrUpdate(movie);
+return movie;
 }
 }

@@ -1,39 +1,44 @@
 package com.crudapp.model;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-//mark class as an Entity 
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 @Entity
-//defining class name as Table name
-@Table
-public class Movies
+public class Movie
 {
-//Defining Movie id as primary key
+
 @Id
-@Column
-private int Movieid;
-@Column
-private String Moviename;
-@Column
+@GeneratedValue
+private int movieid;
+
+
+private String moviename;
+
+
 private String genre;
-@Column
+
+
 private String image;
-@Column
+
+
 private int releaseYear;
 
 
 public int getMovieid() {
-	return Movieid;
+	return movieid;
 }
 public void setMovieid(int movieid) {
-	Movieid = movieid;
+	this.movieid = movieid;
 }
 public String getMoviename() {
-	return Moviename;
+	return moviename;
 }
 public void setMoviename(String moviename) {
-	Moviename = moviename;
+	this.moviename = moviename;
 }
 public String getGenre() {
 	return genre;
