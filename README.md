@@ -1,4 +1,5 @@
 # Movie Store Backend Implementation
+This project is used to implement the backend code for one of my UI applications [Movie-store](https://github.com/tharun-coder1/Movie-store)
 
 ## Technologies used
 * [Java](https://dev.java/) is a popular programming language.Java is used to develop mobile apps, web apps, desktop apps, games and much more.
