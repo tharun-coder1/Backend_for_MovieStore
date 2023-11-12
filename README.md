@@ -1,9 +1,9 @@
 # Movie Store Backend Implementation
 
 ## Technologies used
-* [Java](https://dev.java/) Java is a popular programming language.Java is used to develop mobile apps, web apps, desktop apps, games and much more.
-* [Spring Boot](https://spring.io/projects/spring-boot) Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
-* [Spring Data](https://spring.io/projects/spring-data) Spring Data’s mission is to provide a familiar and consistent, Spring-based programming model for data access while still retaining the special traits of the underlying data store.
+* [Java](https://dev.java/) is a popular programming language.Java is used to develop mobile apps, web apps, desktop apps, games and much more.
+* [Spring Boot](https://spring.io/projects/spring-boot) makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
+* [Spring Data](https://spring.io/projects/spring-data) mission is to provide a familiar and consistent, Spring-based programming model for data access while still retaining the special traits of the underlying data store.
 
 ## Setup
 
