@@ -8,7 +8,6 @@ This project is used to implement the backend code for one of my UI applications
 
 ## Setup
 
-* Download the repository, navigate to the root folder and run the command "npm install" to install dependencies
-* Now run the command "npm start" to start up the server
-* Navigate to localhost:3000 to see the Home page
-* On a Server, Restful APIs are created which server JSON data and these are consumed by the front-end 
+* Download the repository,import it into your IDE (Eclipse or STS)
+* It will automatically load the required libraries based on the POM file. If its not loading the libs, right click on the project and run "Maven Build"
+* Now once again right click on the project and select option "run as spring boot app", you can see the strating of application
