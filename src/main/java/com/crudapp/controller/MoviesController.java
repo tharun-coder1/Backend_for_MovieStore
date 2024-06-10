@@ -22,7 +22,7 @@ public class MoviesController
 MoviesService MoviesService;
 //creating a get mapping that retrieves all the Movies detail from the database
 
-@GetMapping("/movie")
+@GetMapping("/movies")
 private List<Movie> getAllMovies() 
 {
 return MoviesService.getAllMovies();
@@ -46,7 +46,7 @@ MoviesService.delete(movieid);
 
 
 //creating post mapping that post the Movie detail in the database
-@PostMapping("/movies")
+@PostMapping("/addmovie")
 private int saveMovie(@RequestBody Movie movie) 
 {
 MoviesService.saveOrUpdate(movie);
