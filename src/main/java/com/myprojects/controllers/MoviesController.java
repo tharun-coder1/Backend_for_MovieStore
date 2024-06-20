@@ -1,4 +1,4 @@
-package com.crudapp.controller;
+package com.myprojects.controllers;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.crudapp.model.Movie;
-import com.crudapp.service.MoviesService;
+import com.myprojects.entities.Movie;
+import com.myprojects.services.MoviesService;
 
 
 @RestController

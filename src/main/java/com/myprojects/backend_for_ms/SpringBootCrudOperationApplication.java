@@ -1,4 +1,4 @@
-package com.crudapp;
+package com.myprojects.backend_for_ms;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication

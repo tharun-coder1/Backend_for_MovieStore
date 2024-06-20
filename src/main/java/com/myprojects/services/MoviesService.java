@@ -1,11 +1,11 @@
-package com.crudapp.service;
+package com.myprojects.services;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.crudapp.model.Movie;
-import com.crudapp.repository.MoviesRepository;
+import com.myprojects.entities.Movie;
+import com.myprojects.repositories.MoviesRepository;
 //defining the business logic
 @Service
 public class MoviesService 
